@@ -49,7 +49,7 @@ extern "C" {
 #include <asm/fcntl.h>
 #include <asm/posix_types.h>
 #include <asm/types.h>
-#include <linux/dirent.h>
+#include <dirent.h>
 
 #include "linux_syscall_support.h"
 #include "thread_lister.h"

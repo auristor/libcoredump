@@ -44,7 +44,7 @@ AC_COMPILE_IFELSE([AC_LANG_PROGRAM(,)],
                   [AC_SUBST(AM_CFLAGS, ["$AM_CFLAGS -fno-omit-frame-pointer"])
                    AC_MSG_RESULT([yes])],
                   [AC_MSG_RESULT([no])])
-CFLAGS="$saved_CFLAGS"
+CFLAGS="$saved_CFLAGS -D_GNU_SOURCE"
 
 # Write generated configuration file
 AC_CONFIG_FILES([Makefile])
